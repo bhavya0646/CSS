@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(253, 231, 104, 0.897);
+    padding: 0px;
+    margin: 0px;
+}
+.heading{
+    font-size: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.grey{
+    background-color: rgb(207, 205, 205);
+    
+}
+table{
+    font-size: 3vh;
+    width: 80vw;
+    border: 1px solid white;
+    background-color: white;
+    border-collapse: collapse;
+}
+td,th,tr{
+    padding: 2vh ;
+    text-align: center;
+}
+button{
+   margin-right: -35vw;
+   padding: 2vh;
+   width: 10vw;
+   background-color: rgb(146, 5, 146);
+   border-color: rgb(146, 5, 146);
+   color:white;
+}
+.button{
+    margin-left: -70vh;
+    color:white;
+    font-weight: 600;
+}
+button:hover{
+    cursor: pointer;
+}
+.h3{
+    text-align: left;
+}
+.green{
+    color: rgb(9, 218, 9);
+    border: 1px solid rgb(8, 204, 57);
+}
+.yellow{
+    color:yellow;
+    border: 1px solid rgb(235, 235, 26); 
+}
+.red{
+    color: red;
+    border:1px solid rgb(182, 11, 11);
+}
+label{
+    padding:1vh;
+    font-weight: 600;
+}
+i{
+    border:1px solid purple;
+    border-radius: 10vh;
+    padding: 1vh;
+    
+}

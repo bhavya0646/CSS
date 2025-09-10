@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            margin: 0px;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            margin: 0px;
+        }
+        form{
+            border: 1px solid black;
+            width: fit-content;
+            padding: 25px;
+            font-size: large;
+            line-height: 27px;
+        }
+        button{
+            background-color: #5990e2;
+            color: white;
+            padding: 5px 10px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 30%;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .sign {
+            background-color: #2196F3; 
+            margin-right: 130px;
+        }
+
+        .clear{
+            background-color: #f44336; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Signup Form</h1>
+    <form>
+        <label>Full Name:</label><br>
+        <input type="text" name="Full name"placeholder="Full name"><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <label>Mobile Number:</label><br>
+        <input type="number" name="number" placeholder="Mobile no."><br>
+        <label>Date of Birth:</label><br>
+        <input type="date" id="birthday" name="birthday"><br>
+        <label>Gender:</label><br>
+        <input type="radio" id="male" value="Male" name="Gender">
+        <label for="male">Male</label>
+        <input type="radio" id="femal" value="female" name="Gender">
+        <label for="femlae">Female</label>
+        <input type="radio" id="other" value="other" name="Gender">
+        <label for="other">Other</label><br>
+        <label>City:</label><br>
+        <select id="city" name="city">
+            <option value="">--Select city--</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Surat">Surat</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Kutch">Kutch</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+            <option value="Baroda">Baroda</option>
+            </select><br>
+
+            <label>Skills:</label>
+            <input type="checkbox" id="skill1" name="skill1" value="Java">
+            <label for="skill1">JAVA</label>
+            <input type="checkbox" id="skill2" name="skill2" value="Html">
+            <label for="skill2">HTML</label>
+            <input type="checkbox" id="skill3" name="skill3" value="CSS">
+            <label for="skill3">CSS</label>
+            <input type="checkbox" id="skill4" name="skill4" value="python">
+            <label for="skill4">PYTHON</label><br>
+            <label>Address:</label>
+             <br><textarea id="address" rows="3" cols="30" >Enter your full address.... </textarea><br>
+             <label></label>
+            <label>Password:</label><br>
+            <input type="password" placeholder="Password"><br>
+            <label>Confirm password:</label><br>
+            <input type="password" placeholder="Confirm password"><br>
+            <button class="sign">Sign Up</button>
+            <button class="clear">Clear</button>
+
+    </form>
+    </div>
+</body>
+</html>

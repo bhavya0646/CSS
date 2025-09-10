@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Task </title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            vertical-align: middle;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        table {
+            width: 80vw;
+            height: 60vh;
+            border-collapse: collapse;
+        }
+
+        .image1 {
+            background-image: url(i1.jpg);
+            background-size: 6vh;
+            background-repeat: no-repeat;
+            background-position: left;
+            text-align: center;
+        }
+
+        .image2 {
+            background-image: url(i2.jpg);
+            background-size: 6vh;
+            background-repeat: no-repeat;
+            background-position: left;
+            text-align: center;
+        }
+
+        .image3 {
+            background-image: url(i3.jpg);
+            background-size: 6vh;
+            background-repeat: no-repeat;
+            background-position: left;
+            text-align: center;
+        }
+
+        .image4 {
+            background-image: url(i4.jpg);
+            background-size: 6vh;
+            background-repeat: no-repeat;
+            background-position: left;
+            text-align: center;
+        }
+
+        .image5 {
+            background-image: url(i5.jpg);
+            background-size: 6vh;
+            background-repeat: no-repeat;
+            background-position: left;
+            text-align: center;
+        }
+
+        tr,
+        td,
+        th {
+            padding: 10px;
+            text-align: center;
+        }
+
+        td {
+            border-top: 1px solid rgba(221, 221, 221, 0.76);
+
+        }
+
+        th {
+            border-bottom: 4px solid rgba(221, 221, 221, 0.76);
+
+        }
+
+        .main {
+            text-align: left;
+            font-style: italic;
+        }
+
+        .completed {
+            background-image: url(completed.png);
+            background-repeat: no-repeat;
+            background-size: 15vh;
+            background-position: center;
+
+        }
+
+        .cancelled {
+            background-image: url(cancelled.png);
+            background-repeat: no-repeat;
+            background-size: 14vh;
+            background-position: center;
+
+        }
+
+        .pending {
+            background-image: url(pending.png);
+            background-repeat: no-repeat;
+            background-size: 13vh;
+            background-position: center;
+
+        }
+
+        tr:hover {
+            background-color: whitesmoke;
+        }
+
+        .delete {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            margin-left: -30vh;
+            margin-right: -30vh;
+        }
+
+        .first {
+            background-image: url(./delete.png);
+            background-repeat: no-repeat;
+            height: 4vh;
+            width: 10vw;
+            background-size: 4vh;
+            background-position: right;
+        }
+
+        .heading th {
+            font-size: 20px;
+        }
+
+        .second {
+            background-image: url(./edit.png);
+            background-size: 5vh;
+            height: 5vh;
+            width: 10vw;
+            background-repeat: no-repeat;
+        }
+
+       
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div>
+        <table>
+            <h1>Table Data</h1>
+
+            <tr class="heading">
+                <th>ID</th>
+                <th>Users</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td class="image1">Michael Holz</td>
+                <td>Jun 15,2020</td>
+                <td class="completed"></td>
+                <td class="delete">
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="image2">Paula Wilson</td>
+                <td>Jun 21,2020</td>
+                <td class="cancelled"></td>
+                <td class="delete">
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="image3">Antonio Moreno</td>
+                <td>Jun 4,2020</td>
+                <td class="pending"></td>
+                <td class="delete">
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="image4">Mary Saveley</td>
+                <td>Jun 16,2020</td>
+                <td class="completed"></td>
+                <td class="delete">
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="image5">Martin Sommer</td>
+                <td>Aug 4,2020</td>
+                <td class="completed"></td>
+                <td class="delete">
+                    <div><i class="fa-regular fa-star fa-spin"></i></div>
+                    <div><i class="fa-regular fa-star fa-pulse"></i></div>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

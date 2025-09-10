@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        
+        div{
+            border: 1px solid black;
+            width:fit-content;
+            border-radius: 10px;
+            padding:6vh 6vw;
+            align-items: center;
+            background-color: #243f47;
+            display: block;
+            color:white;
+            margin-left:1vw;
+        }
+        
+        button{
+            display: flex;
+            margin-top:2vh;
+            padding: 1vh 7vw;
+            background-color: rgb(38, 135, 173);
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+            margin-top:-1vh ;
+            font-size: 50px;
+            font-family: Harlow solid;
+        }
+        body{
+            justify-content: center;
+           display: flex;
+           height: 100vh;
+           align-items: center;
+           background-image:linear-gradient(to right,#243f47,#2153c79d);
+            
+        }
+        input{
+            margin-bottom: 2vh;
+            border-style:groove;
+            border-color:white;
+            width:18vw;
+        }
+        label{
+            
+            margin-left: -14vw;
+        }
+        .label{
+            margin-left: -1vh;
+            margin-top:1vh;
+        }
+        a{
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+   
+    <div>
+        <h1>User Login</h1>
+        <form method="post" action="login">
+
+            <label>Username</label>
+            <input type="username" name="Username">
+            <label>Password</label>
+            <input type="password" name="Password">
+            <button type="login" name="login">Login</button>
+            <label class="label">New User?<a href="register.html">Create account</a></label>
+        </form>
+    </div>
+</body>
+</html>
